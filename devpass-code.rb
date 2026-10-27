@@ -5,22 +5,22 @@
 class DevpassCode < Formula
   desc "DevPass Code — the LLM Gateway coding agent for the terminal."
   homepage "https://github.com/theopenco/devpass-code"
-  version "2.0.29"
+  version "2.0.30"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.29/devpass-code-darwin-x64.zip"
-      sha256 "3e233956590ca38b967de190ec288d581923e759e46a2576828d096d679f3e85"
+      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.30/devpass-code-darwin-x64.zip"
+      sha256 "67361a18f617eed74917c0e06e226163498f95101660e37aa1399daa6075beb3"
 
       def install
         bin.install "devpass-code"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.29/devpass-code-darwin-arm64.zip"
-      sha256 "cd14fccb8d551c96b00cc540c471241f6f7f87bd7f0b9a4110159c6e9fa3ed59"
+      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.30/devpass-code-darwin-arm64.zip"
+      sha256 "3ad47c014a6efdc53f797794dbccdab921fa72509f94773f54d73417b97d9971"
 
       def install
         bin.install "devpass-code"
@@ -30,15 +30,15 @@ class DevpassCode < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.29/devpass-code-linux-x64.tar.gz"
-      sha256 "c8d8c8078679a186cdf2e81fa4688339280612eec2301ce491b7839a67b649b3"
+      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.30/devpass-code-linux-x64.tar.gz"
+      sha256 "896b71222013582a5435dc40673296aecd33317db86ddbd0dd83d6195cf68f30"
       def install
         bin.install "devpass-code"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.29/devpass-code-linux-arm64.tar.gz"
-      sha256 "24ff28c1f65dc873c4260e3f89e702eb408a2f3fb2f26fc8e16201d9c280ee96"
+      url "https://github.com/theopenco/devpass-code/releases/download/v2.0.30/devpass-code-linux-arm64.tar.gz"
+      sha256 "186365d926bfd2d6e5325fa16254efedef030bb1c4699478ba4d14e308bb4c50"
       def install
         bin.install "devpass-code"
       end
